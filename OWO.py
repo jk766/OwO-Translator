@@ -1,41 +1,40 @@
-#i want to fucking yeet myself off a cliff
+
 import random
 
 #input
-发=str(input())
-就=发.split(" ")
+f=str(input())
+j=f.split(" ")
 
 #constants
-熙=["a", "e", "o", "u"]
+x1=["a", "e", "o", "u"]
 
-#this gay ass function turns text into OwOtext
-#the variables are in chinese cause 你他妈的黑鬼,这是我的冰淇淋!
-def owo(都):
-    任=[]
-    库=[]  
-    负=""
-    for 很 in 都:
-        任.append(list(很))
-    for 撒 in 任:
-        for 哇 in 撒:
-            if 哇 == "l" or 哇 == "r":
-                撒[撒.index(哇)]="w"
-            if 哇 == "n" and 撒.index(哇) < len(撒)-1 and 撒[撒.index(哇)+1] in 熙:
-               撒[撒.index(哇)]="ny"
-        库.append(撒)
-    for 赞 in 库:
-        群=""
-        for 杠 in 赞:
-            群=群+杠
-        负=负+群+" "
-    return(负)
+
+def owo(d):
+    r=[]
+    k1=[]  
+    f1=""
+    for h in d:
+        r.append(list(h))
+    for s1 in r:
+        for w in s1:
+            if w == "l" or w == "r":
+                s1[s1.index(w)]="w"
+            if w == "n" and s1.index(w) < len(s1)-1 and s1[s1.index(w)+1] in x1:
+                s1[s1.index(w)]="ny"
+        k1.append(s1)
+    for zn in k1:
+        q=""
+        for g in zn:
+            q=q+g
+        f1=f1+q+" "
+    return(f1)
 
 print("\n")
-print(owo(就))
+print(owo(j))
 
 #this function generates the stutter effect in OwOtext
-k=就
-v=熙
+k=j
+v=x1
 def st(x):
     for i in x:
         r=random.randint(1,5)
@@ -49,10 +48,10 @@ def st(x):
 
 #print(st(k))
 
-#now it's time to notice some bulges
+
 exp=["~","~~","OwO","OwO","OwO","owo","UwU","uwu","UwU","UwU",">w<","^w^","^~^",">///<", ":3", "desu","baka!"]
 
-def insertRandomShit(x):
+def insertEmote(x):
     for i in x:
         r=random.randint(0,3)
         z=list(i)
@@ -63,6 +62,6 @@ def insertRandomShit(x):
     return(x)
 
 print("\n")
-print(st(insertRandomShit(owo(k).split(" "))))
+print(st(insertEmote(owo(k).split(" "))))
 
 
